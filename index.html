@@ -17,20 +17,28 @@
       text-align: right;
     }
     .container {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.7); /* כהה יותר להצגת טקסט לבן ברור */
       margin: 40px auto;
       max-width: 800px;
       padding: 30px;
       border-radius: 15px;
+      overflow: hidden;
     }
     h1 {
       color: #ffd280;
+      margin-top: 0;
     }
     img {
       width: 200px;
       border-radius: 50%;
       float: right;
       margin-left: 20px;
+      background: #fff;
+      padding: 4px;
+    }
+    p {
+      line-height: 1.8;
+      font-size: 18px;
     }
     form input, form textarea, form button {
       width: 100%;
@@ -53,6 +61,13 @@
     form button:hover {
       background-color: #e76b52;
     }
+    @media (max-width: 600px) {
+      img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+      }
+    }
   </style>
 </head>
 <body>
@@ -60,8 +75,8 @@
     <h1>מנטורDאטא – ייעוץ קריירה לאנשי דאטה</h1>
     <img src="profile_pic.jpg" alt="שושן עם שלם">
     <p>
-      שמי שושן עם שלם ואני יועץ לאנשי דאטה שרוצים לפרוץ דרך בקריירה.  
-      אני עוזר למי שתקוע מקצועית או מנטלית לעשות שינוי – מבוסס ניסיון אמיתי והצלחות מוכחות.  
+      שמי שושן עם שלם ואני יועץ לאנשי דאטה שרוצים לפרוץ דרך בקריירה.<br>
+      אני עוזר למי שתקוע מקצועית או מנטלית לעשות שינוי – מבוסס ניסיון אמיתי והצלחות מוכחות.<br>
       אם גם אתה מרגיש שמגיע לך יותר – אתה בדיוק במקום הנכון.
     </p>
     <form action="https://formsubmit.co/shoshan1987@gmail.com" method="POST">
