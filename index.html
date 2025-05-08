@@ -6,64 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      background: linear-gradient(to right, #ff7e5f, #feb47b);
-      font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
       margin: 0;
-      padding: 0;
-      text-align: right;
+      font-family: Arial, sans-serif;
+      color: #fff;
       direction: rtl;
+      text-align: right;
     }
     .container {
-      max-width: 800px;
+      background: rgba(0, 0, 0, 0.6);
       margin: 40px auto;
-      background: #ffffffcc;
-      padding: 20px;
-      border-radius: 10px;
+      max-width: 800px;
+      padding: 30px;
+      border-radius: 15px;
     }
     h1 {
-      color: #ff7e5f;
+      color: #ffd280;
     }
     img {
-      width: 220px;
+      width: 200px;
       border-radius: 50%;
       float: right;
       margin-left: 20px;
     }
     form input, form textarea, form button {
       width: 100%;
-      margin-bottom: 10px;
       padding: 10px;
+      margin-bottom: 12px;
       font-size: 16px;
       box-sizing: border-box;
+      border: none;
+      border-radius: 5px;
+    }
+    form input, form textarea {
+      background: #fff;
+      color: #000;
     }
     form button {
       background-color: #ff7e5f;
       color: white;
-      border: none;
-      border-radius: 5px;
       cursor: pointer;
     }
-    form button:hover {
-      background-color: #e76b52;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>מנטורDאטא – ייעוץ קריירה לאנשי דאטה</h1>
-    <img src="profile_pic.jpg" alt="שושן עם שלם">
-    <p>
-      שמי שושן עם שלם ואני יועץ לאנשי דאטה שרוצים לפרוץ דרך בקריירה.  
-      אני עוזר למי שתקוע מקצועית או מנטלית לעשות שינוי – מבוסס ניסיון אמיתי והצלחות מוכחות.  
-      אם גם אתה מרגיש שמגיע לך יותר – אתה בדיוק במקום הנכון.
-    </p>
-    <form action="https://formsubmit.co/shoshan1987@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="שם" required>
-      <input type="email" name="email" placeholder="אימייל" required>
-      <input type="tel" name="phone" placeholder="טלפון" required>
-      <textarea name="message" placeholder="הודעה" required></textarea>
-      <button type="submit">שלח</button>
-    </form>
-  </div>
-</body>
-</html>
+    form button
