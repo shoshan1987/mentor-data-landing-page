@@ -17,9 +17,9 @@
       text-align: right;
     }
     .container {
-      background: rgba(0, 0, 0, 0.7); /* כהה יותר להצגת טקסט לבן ברור */
+      background: rgba(0, 0, 0, 0.7);
       margin: 40px auto;
-      max-width: 800px;
+      max-width: 900px;
       padding: 30px;
       border-radius: 15px;
       overflow: hidden;
@@ -28,7 +28,7 @@
       color: #ffd280;
       margin-top: 0;
     }
-    img {
+    img.profile {
       width: 200px;
       border-radius: 50%;
       float: right;
@@ -61,8 +61,26 @@
     form button:hover {
       background-color: #e76b52;
     }
-    @media (max-width: 600px) {
-      img {
+    h2 {
+      margin-top: 50px;
+      color: #ffd280;
+    }
+    .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .testimonials img {
+      width: 48%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    @media (max-width: 768px) {
+      .testimonials img {
+        width: 100%;
+      }
+      img.profile {
         float: none;
         display: block;
         margin: 0 auto 20px auto;
@@ -73,7 +91,7 @@
 <body>
   <div class="container">
     <h1>מנטורDאטא – ייעוץ קריירה לאנשי דאטה</h1>
-    <img src="profile_pic.jpg" alt="שושן עם שלם">
+    <img src="profile_pic.jpg" alt="שושן עם שלם" class="profile">
     <p>
       שמי שושן עם שלם ואני יועץ לאנשי דאטה שרוצים לפרוץ דרך בקריירה.<br>
       אני עוזר למי שתקוע מקצועית או מנטלית לעשות שינוי – מבוסס ניסיון אמיתי והצלחות מוכחות.<br>
@@ -86,6 +104,17 @@
       <textarea name="message" placeholder="הודעה" required></textarea>
       <button type="submit">שלח</button>
     </form>
+
+    <h2>💬 מה הלקוחות שלי מספרים עליי</h2>
+    <div class="testimonials">
+      <img src="WhatsApp Image 2025-05-08 at 14.19.11_7c5124f5.jpg" alt="המלצה">
+      <img src="WhatsApp Image 2025-05-08 at 14.19.12_8258ca75.jpg" alt="המלצה">
+      <img src="WhatsApp Image 2025-05-08 at 14.19.12_00ffe5ad.jpg" alt="המלצה">
+      <img src="WhatsApp Image 2025-05-08 at 14.19.12_6a85c8f3.jpg" alt="המלצה">
+      <img src="WhatsApp Image 2025-05-08 at 14.19.13_37b1e75b.jpg" alt="המלצה">
+      <img src="WhatsApp Image 2025-05-08 at 14.26.25_d0ecf127.jpg" alt="המלצה">
+      <img src="WhatsApp Image 2025-05-08 at 14.31.19_5d9485ad.jpg" alt="המלצה">
+    </div>
   </div>
 </body>
 </html>
